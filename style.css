@@ -17,10 +17,10 @@ body {
     transform: translate(-50%, -50%);
     width: 70rem;
     background-image: linear-gradient(-105deg,
-    rgba(245,245,245, 0.8) 0%,
-      rgba(245, 245, 245, 0.8)50%,
+    rgba(245,245,245, 1) 0%,
+      rgba(245, 245, 245, 1)50%,
       transparent 50%),
-      url(./54950666.png);
+      url(./1.png);
     background-size: cover;
     background-position: center;
     box-shadow: 1.5rem 1rem .5rem rgba(0,0,0, .5);
@@ -146,19 +146,27 @@ body {
     .caixa-login {
         width: 50rem;
         background-size: contain;
+        background-image: linear-gradient(-105deg,
+        rgba(245,245,245, 1) 0%,
+        rgba(245, 245, 245, 1)50%,
+        transparent 50%),
+        url(./1.png);
+        background-size: auto;
+        background-position: left;
     }
+    
 }
 
 @media (max-width : 850px) {
     .caixa-login {
         width: 40rem;
-        background-size: cover;
-        /* background-position: left; */
-        background-image: linear-gradient(90deg,
-        transparent 0%,
-        transparent 50%,
-        rgba(245, 245, 245, 0.8)50%),
-      url(./54950666.png);
+        background-image: linear-gradient(-105deg,
+        rgba(245,245,245, 1) 0%,
+        rgba(245, 245, 245, 1)50%,
+        transparent 50%),
+        url(./1.png);
+        background-size: auto;
+        background-position: center;
     }
     .form__titulo {
         text-align: center;
@@ -209,12 +217,12 @@ body {
         width: 90vw;
         /* height: 55vh; */
         background-size: cover;
-        background-position: center;
+        background-position: left;
         background-image: linear-gradient(90deg,
         rgba(245, 245, 245, 0.8)0%,
         rgba(245, 245, 245, 0.8)50%,
         rgba(245, 245, 245, 0.8)50%),
-      url(./54950666.png);
+      url(./1.png);
     }
     .saudacao {
         width: 100%;
