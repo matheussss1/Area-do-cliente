@@ -94,6 +94,9 @@ body {
     border-left: 5px solid red;
     /* border-bottom: 5px solid red; */
 }
+.form_group_input:valid {
+    border: 5px solid rgb(0, 179, 0);
+}
 .form-group__label {
     display: block;
     margin-left: 1rem;
