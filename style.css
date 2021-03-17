@@ -218,14 +218,14 @@ body {
     }
     .saudacao {
         width: 100%;
-        text-align: left;
+        text-align: center;
     }
     .form {
         margin: 0 auto;
         width: 100%;
     }
     .form__titulo {
-        text-align: left;
+        text-align: center;
         padding: 0;
         margin-left: 1rem;
         font-size: .9rem;
@@ -254,5 +254,8 @@ body {
     }
     .form__titulo {
         text-align: center;
+    }
+    .box-area {
+        margin-top: 1rem;
     }
 }
