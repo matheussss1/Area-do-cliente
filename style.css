@@ -204,7 +204,7 @@ body {
     }
     .caixa-login {
         width: 90vw;
-        height: 55vh;
+        /* height: 55vh; */
         background-size: cover;
         background-position: center;
         background-image: linear-gradient(90deg,
@@ -245,9 +245,6 @@ body {
 @media (max-width : 400px) {
     html {
         font-size: 80%;
-    }
-    .caixa-login {
-        height: 49vh;
     }
     .saudacao__bemvindo{
         font-size: 2rem;
