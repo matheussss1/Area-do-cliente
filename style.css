@@ -16,10 +16,10 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 70rem;
-    background-image: linear-gradient(-105deg,
+    background-image: linear-gradient(-90deg,
     rgba(245,245,245, 1) 0%,
-      rgba(245, 245, 245, 1)50%,
-      transparent 50%),
+      rgba(245, 245, 245, 1)45%,
+      transparent 45%),
       url(./1.png);
     background-size: cover;
     background-position: center;
@@ -146,13 +146,16 @@ body {
     .caixa-login {
         width: 50rem;
         background-size: contain;
-        background-image: linear-gradient(-105deg,
+        background-image: linear-gradient(-90deg,
         rgba(245,245,245, 1) 0%,
         rgba(245, 245, 245, 1)50%,
         transparent 50%),
         url(./1.png);
         background-size: auto;
         background-position: left;
+    }
+    .form__titulo {
+        text-align: center;
     }
     
 }
