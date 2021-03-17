@@ -30,7 +30,7 @@ body {
     width: 100%;
     justify-content: space-between;
     position: absolute;
-    top: -4rem;
+    top: -3.5rem;
     left: 0;
     align-items: center;
 }
@@ -244,6 +244,11 @@ body {
         padding: 0;
     }
 }
+@media (max-width : 500px) {
+    .box-area {
+        margin-top: .6rem;
+    }
+}
 @media (max-width : 400px) {
     html {
         font-size: 80%;
@@ -256,6 +261,6 @@ body {
         text-align: center;
     }
     .box-area {
-        margin-top: 1rem;
+        margin-top: .5rem;
     }
 }
