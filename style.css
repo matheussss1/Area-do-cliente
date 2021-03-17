@@ -137,3 +137,105 @@ body {
     color: rgb(55, 120, 173);
     font-size: 1.1rem;
 }
+
+@media (max-width : 1200px) {
+    .caixa-login {
+        width: 50rem;
+        background-size: contain;
+    }
+}
+
+@media (max-width : 850px) {
+    .caixa-login {
+        width: 40rem;
+        background-size: cover;
+        /* background-position: left; */
+        background-image: linear-gradient(90deg,
+        transparent 0%,
+        transparent 50%,
+        rgba(245, 245, 245, 0.8)50%),
+      url(./54950666.png);
+    }
+    .form__titulo {
+        text-align: center;
+        padding-left: 2.1rem;
+        margin-bottom: 2rem;
+    }
+    .form-group__input {
+        font-size: 1rem;
+    }
+    .form-group__label {
+        font-size: 1rem;
+    }
+    .form-group__label:before {
+        content: '*';
+    }
+    .form-group__submit {
+        width: 80%;
+        margin: 0;
+        margin: 0rem 0 2rem 3.5rem;
+        display: block;
+        font-size: 1rem;
+    }
+    .recuperar {
+        font-size: 1.4rem;
+        width: 100%;
+        margin: 0;
+        padding-left: 3rem;
+        display: block;
+    }
+    .recuperar__link {
+        padding: 1rem;
+        display: block;
+    }
+    .saudacao {
+        width: 60%;
+        margin-right: -1rem;
+    }
+}
+
+@media (max-width : 666px) {
+    .box-area__texto {
+        font-size: 1.5rem;
+    }
+    .logo__image {
+        height: 2.8rem;
+    }
+    .caixa-login {
+        width: 90vw;
+        background-size: cover;
+        background-position: center;
+        background-image: linear-gradient(90deg,
+        rgba(245, 245, 245, 0.8)0%,
+        rgba(245, 245, 245, 0.8)50%,
+        rgba(245, 245, 245, 0.8)50%),
+      url(./54950666.png);
+    }
+    .saudacao {
+        width: 100%;
+        text-align: left;
+    }
+    .form {
+        margin: 0 auto;
+        width: 100%;
+    }
+    .form__titulo {
+        text-align: left;
+        padding: 0;
+        margin-left: 1rem;
+        font-size: .9rem;
+    }
+    .form-group:not(:last-child) {
+        float: none;
+    }
+    .form-group {
+        width: 100%!important;
+    }
+    .form-group__submit {
+        margin: 0 auto;
+        margin-bottom: 2rem;
+    }
+    .recuperar {
+        padding: 0;
+    }
+}
