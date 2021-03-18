@@ -164,9 +164,15 @@ body {
 @media (max-width:800px) {
     .caixa-login {
         width: 40rem;
+        max-height: 40rem;
     }
     .saudacao__bemvindo {
         font-size: 2.4rem;
+        margin-bottom: 1.5rem;
+    }
+    .form{
+        padding-bottom: 0;
+        padding-top: 0;
     }
     .form__titulo {
         font-size: 1rem;
@@ -184,8 +190,12 @@ body {
     }
 }
 @media (max-width : 650px){
+    html {
+        font-size: 90%;
+    }
     .caixa-login {
         width: 25rem;
+        max-height: 30rem;
     }
     .box-imagem{
         display: none;
@@ -208,13 +218,13 @@ body {
         font-size: 2rem;
     }
     .box-area{
-        top: -2.7rem;
+        top: -2rem;
     }
     .box-area__texto{
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
     .box-area__logo{
-        height: 2.5rem;
+        height: 2rem;
     }
     .recuperar {
         font-size: .9rem;
