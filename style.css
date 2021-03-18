@@ -8,9 +8,62 @@ body {
     background-color: #5db0e2;
     font-size: 62.5%;
     font-family: 'EXO 2';
+    overflow: hidden;
 }
 
-.caixa-login {
+.moveCaixaLoginOut{
+    animation: moveCaixaLoginOut 2s forwards;
+}
+@keyframes moveCaixaLoginOut {
+    from{
+        top: 50%;
+        left: 50%;
+    }
+    to{
+        top: 50%;
+        left: -150%;
+    }
+}
+.moveCaixaLoginIn{
+    animation: moveCaixaLoginIn 2s forwards;
+}
+@keyframes moveCaixaLoginIn {
+    to{
+        top: 50%;
+        left: 50%;
+    }
+    from{
+        top: 50%;
+        left: -150%;
+    }
+}
+.moveCaixaRecoveryIn{
+    animation: moveCaixaRecoveryIn 2s forwards;
+}
+@keyframes moveCaixaRecoveryIn {
+    from{
+        top: 50%;
+        left: 150%;
+    }
+    to{
+        top: 50%;
+        left: 50%;
+    }
+}
+.moveCaixaRecoveryOut {
+    animation: moveCaixaRecoveryOut 2s forwards;
+}
+@keyframes moveCaixaRecoveryOut {
+    to{
+        top: 50%;
+        left: 150%;
+    }
+    from{
+        top: 50%;
+        left: 50%;
+    }
+}
+.caixa-login{
     width: 110rem;
     background-color: rgb(205,205,205);
     position: absolute;
@@ -19,6 +72,45 @@ body {
     transform: translate(-50%, -50%);
     box-shadow: 1rem 2rem 1rem rgba(0,0,0,0.3);
     /* display: flex; */
+}
+.caixa-login-recovery {
+    width: 110rem;
+    position: absolute;
+    top: 50%;
+    left: 150%;
+    transform: translate(-50%, -50%);
+    /* transform: translateX(100vw) translateY(-50%); */
+}
+.close {
+    background-color: rgba(240,240,240,0.5);
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+    position: absolute;
+    right: -4rem;
+    top: 0rem;
+    cursor: pointer;
+}
+.close__button {
+    background-color: black;
+    width: 2.5rem;
+    height: 2px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.close__button::before{
+    content: '';
+    background-color: black;
+    width: 2.5rem;
+    height: 2px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(90deg);
 }
 .box-area {
     display: flex;
@@ -140,10 +232,11 @@ body {
 .recuperar__link:visited{
     display: block;
     color: rgba(03, 106, 146, 1);
+    cursor: pointer;
 }
 
 @media (max-width: 1780px) {
-    .caixa-login {
+    .caixa-login, .caixa-login-recovery {
         width: 80rem;
     }
     .box-imagem {
@@ -154,7 +247,7 @@ body {
     }
 }
 @media (max-width: 1300px){
-    .caixa-login {
+    .caixa-login, .caixa-login-recovery {
         width: 50rem;
     }
     .box-imagem {
@@ -162,7 +255,7 @@ body {
     }
 }
 @media (max-width:800px) {
-    .caixa-login {
+    .caixa-login, .caixa-login-recovery {
         width: 40rem;
         max-height: 40rem;
     }
@@ -193,7 +286,7 @@ body {
     html {
         font-size: 90%;
     }
-    .caixa-login {
+    .caixa-login, .caixa-login-recovery {
         width: 25rem;
         max-height: 30rem;
     }
@@ -209,9 +302,12 @@ body {
     .box-area__logo{
         height: 3rem;
     }
+    .form-group__submit--recovery{
+        margin-bottom: 2rem;
+    }
 }
 @media (max-width : 410px) {
-    .caixa-login {
+    .caixa-login, .caixa-login-recovery {
         width: 20rem;
     }
     .saudacao__bemvindo {
@@ -228,5 +324,8 @@ body {
     }
     .recuperar {
         font-size: .9rem;
+    }
+    .form-group__submit--recovery{
+        margin-bottom: 2rem;
     }
 }

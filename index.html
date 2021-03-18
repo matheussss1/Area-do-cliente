@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="style.css">
     <title>SCI</title>
 </head>
-<body>
+<body onload="minhaFuncao()">
 
     
-    <div class="caixa-login">    
+    <div class="caixa-login" id="caixa-login">    
         <div class="box-area">
             <h1 class="box-area__texto">Área do Cliente</h1>
             <img src="logo.png" alt="" class="box-area__logo">
@@ -36,10 +36,74 @@
                     <input type="submit" class="form-group__submit" value="Entrar">
                 </div>
                 <div class="form-group">
-                    <p class="recuperar">Esqueceu sua senha?<a href="#" class="recuperar__link">Clique aqui</a></p>
+                    <p class="recuperar">Esqueceu sua senha?<a onclick ="myFunction()" class="recuperar__link">Clique aqui</a></p>
                 </div>
             </div>   
         </form>
     </div>
+
+    <div class="caixa-login-recovery" id="caixa-login-recovery">
+        <div class="box-area">
+            <h1 class="box-area__texto">Recuperar senha</h1>
+            <img src="logo.png" alt="" class="box-area__logo">
+        </div>
+        <div class="close" onclick="closeRecovery()">
+            <span class="close__button" ></span>
+        </div>
+        <div class="caixa-login__container">
+            <div class="box-imagem">
+                <img src="full-size.png" alt="" class="box-imagem__img">
+            </div>
+            <form action="" class="form">
+                <div class="form-header">
+                    <h2 class="saudacao__bemvindo">Esqueceu a sua senha?</h2>
+                    <h3 class="form__titulo">Não se preocupe, nós o enviaremos um email de redefinição de senha</h3>
+                </div>
+                <div class="form-group">
+                    <input type="text" minlength="3" required placeholder="Login área do cliente" id="log_area_cliente" class="form-group__input">
+                    <label for="log_area_cliente" class="form-group__label">Login área do cliente</label>
+                </div>
+                <div class="form-group">
+                    <input type="text" minlength="3" required placeholder="Código do cliente" id="cod_cliente" class="form-group__input">
+                    <label for="cod_cliente" class="form-group__label">Código do cliente</label>
+                </div>
+                <div class="form-group">
+                    <input type="Email" minlength="3" required placeholder="Email" id="Email" class="form-group__input">
+                    <label for="Email" class="form-group__label">Email</label>
+                </div>
+                <div class="form-group">
+                    <input type="submit" class="form-group__submit form-group__submit--recovery" value="Enviar">
+                </div>
+            </div>   
+        </form>
+    </div>
+
 </body>
+<script>
+    function myFunction() {
+        const caixaLogin = document.getElementById("caixa-login")
+        const caixaRecovery = document.getElementById("caixa-login-recovery")
+
+        caixaLogin.classList.add("moveCaixaLoginOut")
+        caixaRecovery.classList.add("moveCaixaRecoveryIn")
+        caixaLogin.classList.remove("moveCaixaLoginIn")
+        caixaRecovery.classList.remove("moveCaixaRecoveryOut")
+    }
+
+    function closeRecovery(){
+        const caixaLogin = document.getElementById("caixa-login")
+        const caixaRecovery = document.getElementById("caixa-login-recovery")
+
+        caixaLogin.classList.add("moveCaixaLoginIn")
+        caixaRecovery.classList.add("moveCaixaRecoveryOut")
+        caixaLogin.classList.remove("moveCaixaLoginOut")
+        caixaRecovery.classList.remove("moveCaixaRecoveryIn")
+    }
+
+    function minhaFuncao(){
+        const caixaLogin = document.getElementById("caixa-login")
+        const caixaRecovery = document.getElementById("caixa-login-recovery")
+    }
+
+</script>
 </html>
