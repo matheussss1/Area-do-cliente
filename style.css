@@ -4,9 +4,11 @@
     margin: 0;
     box-sizing: border-box;
 }
+html {
+    font-size: 62.5%;
+}
 body {
     background-color: #5db0e2;
-    font-size: 62.5%;
     font-family: 'EXO 2';
     overflow: hidden;
 }
@@ -72,23 +74,24 @@ body {
 
 /* parte de recuperar senha */
 .caixa-login-recovery {
-    width: 110rem;
+    width: 176rem;
     position: absolute;
     top: 50%;
     left: 150%;
     transform: translate(-50%, -50%);
-    /* transform: translateX(100vw) translateY(-50%); */
+    border-radius: 1rem;
+    backface-visibility: hidden;
 }
 .saudacao__esqueceu{
     color: rgb(55, 120, 173);
-    font-size: 2rem;
-    margin-bottom: .5rem;
+    font-size: 4rem;
+    margin-bottom: 1rem;
 }
 .close {
     background-color: rgba(240,240,240,0.5);
     cursor: pointer;
     margin-bottom: 1rem;
-    font-size: 1rem;
+    font-size: 1.4rem;
     display: block;
     text-decoration: underline;
 }
@@ -96,14 +99,14 @@ body {
 
 /* parte de login */
 .caixa-login{
-    width: 110rem;
-    background-color: rgb(205,205,205);
+    width: 176rem;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: 1rem 2rem 1rem rgba(0,0,0,0.3);
-    
+    backface-visibility: hidden;
+    border-radius: 1rem;
 }
 .box-area {
     display: flex;
@@ -115,7 +118,7 @@ body {
 }
 .box-area__texto {
     font-style: italic;
-    font-size: 2rem;
+    font-size: 2.8rem;
 }
 .box-area__logo {
     height: 4rem;
@@ -126,47 +129,53 @@ body {
     width: 100%;
 }
 .box-imagem {
-    /* overflow: hidden; */
     width: 70%;
+    border-radius: 1rem;
+    border-bottom-left-radius: 1rem;
 }
 .box-imagem__img {
     display: block;
     width: 100%;
     height: 100%;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
 }
 .form {
     background-color: rgb(240,240,240);
-    padding: 1rem;
+    padding: 2rem;
     width: 30%;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+
 }
 .form-header{
-    padding-top: 1rem;
+    padding-top: 2rem;
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
 }
 .saudacao__bemvindo{
     color: rgb(55, 120, 173);
-    font-size: 2.3rem;
+    font-size: 4rem;
     margin-bottom: 2rem;
 }
 .form__titulo {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
 }
 .form-group{
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     position: relative;
 }
 .form-group__input {
     display: block;
     width: 90%;
     margin: 0 auto;
-    height: 3rem;
+    height: 5rem;
     border: none;
     border-left: 5px solid rgb(0, 202, 0);
     outline: none;
-    box-shadow: .5rem .5rem .5rem rgba(0,0,0,0.2);
+    box-shadow: .5rem .2rem .5rem rgba(0,0,0,0.2);
     padding: 0 1rem ;
-    font-size: 1.3rem;
+    font-size: 2rem;
 }
 .form-group__input:focus {
     /* border-left: 5px solid rgb(0, 179, 0); */
@@ -181,10 +190,10 @@ body {
 }
 .form-group__label {
     position: absolute;
-    top: -1.4rem;
-    left: 2rem;
+    top: -2.2rem;
+    left: 3rem;
     transition: all .4s;
-    font-size: 1rem;
+    font-size: 1.4rem;
 }
 .form-group__input:placeholder-shown + .form-group__label {
     opacity: 0;
@@ -194,11 +203,11 @@ body {
 .form-group__submit {
     display: block;
     margin: 0 auto;
-    padding: .8rem 2.5rem;
+    padding: 1.2rem 4rem;
     border: none;
     outline: none;
     background-color: #5db0e2;
-    font-size: 1.2rem;
+    font-size: 2rem;
     color: white;
     letter-spacing: .1rem;
     box-shadow: .5rem .5rem .5rem rgba(0,0,0,0.2);
@@ -219,7 +228,7 @@ body {
     width: 45%;
     margin: 0 auto;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 2rem;
     font-weight: 600;
 }
 .recuperar__link,
@@ -232,7 +241,7 @@ body {
 
 @media (max-width: 1780px) {
     .caixa-login, .caixa-login-recovery {
-        width: 80rem;
+        width: 90%;
     }
     .recuperar {
         width: 50%;
@@ -243,10 +252,14 @@ body {
     .box-imagem{
         width: 60%;
     }
+
 }
 @media (max-width: 1300px){
     .caixa-login, .caixa-login-recovery {
-        width: 50rem;
+        width: 90%;
+    }
+    .recuperar{
+        width: 65%;
     }
     .form{
         width: 50%;
@@ -257,52 +270,51 @@ body {
 }
 @media (max-width:800px) {
     .caixa-login, .caixa-login-recovery {
-        width: 40rem;
+        width: 90%;
         max-height: 40rem;
     }
     .saudacao__bemvindo {
-        font-size: 2.4rem;
+        font-size: 3rem;
         margin-bottom: 1.5rem;
     }
-    .form{
-        width: 100%;
-        padding-bottom: 0;
-        padding-top: 0;
+    .saudacao__esqueceu {
+        font-size: 2.4rem;
     }
     .form__titulo {
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
     .form-group:last-child{
         margin-bottom: 0;
     }
     .recuperar {
-        font-size: 1rem;
+        font-size: 1.6rem;
         /* width: 80%; */
     }
     .recuperar__link{
-        font-size: 1.2rem;
+        font-size: 1.6rem;
         padding: 1rem;
+    }
+    .form-group__input {
+        font-size: 1.6rem;
+        height: 3.5rem;
+    }
+    .form-group__submit{
+        font-size: 1.6rem;
+        padding: 1rem 2rem;
     }
 }
 @media (max-width : 650px){
-    html {
-        font-size: 90%;
-    }
+    
     .caixa-login, .caixa-login-recovery {
-        width: 25rem;
-        max-height: 30rem;
+        width: 90%;
+        border-radius: 0;
     }
     .box-imagem{
         display: none;
     }
-    .box-area{
-        top: -3.2rem;
-    }
-    .box-area__texto{
-        font-size: 1.8rem;
-    }
-    .box-area__logo{
-        height: 3rem;
+    .form{
+        width: 100%;
+        border-radius: 0;
     }
     .form-group__submit--recovery{
         margin-bottom: 2rem;
@@ -310,22 +322,22 @@ body {
 }
 @media (max-width : 410px) {
     .caixa-login, .caixa-login-recovery {
-        width: 20rem;
+        width: 90%;
     }
     .saudacao__bemvindo {
         font-size: 2rem;
     }
     .box-area{
-        top: -2rem;
+        top: -3.2rem;
     }
     .box-area__texto{
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
     .box-area__logo{
-        height: 1.8rem;
+        height: 3rem;
     }
     .recuperar {
-        font-size: .9rem;
+        font-size: 1.3rem;
     }
     .form-group__submit--recovery{
         margin-bottom: 2rem;
