@@ -80,6 +80,7 @@ body {
     left: 150%;
     transform: translate(-50%, -50%);
     border-radius: 1rem;
+    box-shadow: 1rem 2rem 1rem rgba(0,0,0,0.3);
     backface-visibility: hidden;
 }
 .saudacao__esqueceu{
