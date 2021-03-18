@@ -9,269 +9,214 @@ body {
     font-size: 62.5%;
     font-family: 'EXO 2';
 }
+
 .caixa-login {
-    padding: 2rem;
+    width: 110rem;
+    background-color: rgb(205,205,205);
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 70rem;
-    background-image: linear-gradient(-90deg,
-    rgba(245,245,245, 1) 0%,
-      rgba(245, 245, 245, 1)45%,
-      transparent 45%),
-      url(./1.png);
-    background-size: cover;
-    background-position: center;
-    box-shadow: 1.5rem 1rem .5rem rgba(0,0,0, .5);
+    box-shadow: 1rem 2rem 1rem rgba(0,0,0,0.3);
+    /* display: flex; */
 }
 .box-area {
     display: flex;
     width: 100%;
     justify-content: space-between;
     position: absolute;
-    top: -3.5rem;
-    left: 0;
+    top: -4.5rem;
     align-items: center;
 }
 .box-area__texto {
+    font-style: italic;
     font-size: 2rem;
-    color: white;
-    font-style: italic;
 }
-
-.logo__image {
-    height: 3rem;
+.box-area__logo {
+    height: 4rem;
 }
-.saudacao {
-    width: 50%;
-    margin: 0 0 0 auto;
-    text-align: right;
+.box-imagem {
+    /* overflow: hidden; */
+    width: 66.666%;
 }
-.saudacao__bemvindo {
-    font-style: italic;
-    color: rgb(55, 120, 173);
-    font-size: 2.4rem;
-    margin-bottom: 1rem;
+.box-imagem__img {
+    display: block;
+    height: 100%;
+}
+.caixa-login__container {
+    display: flex;
+    overflow: hidden;
 }
 .form {
-    width: 50%;
-    margin: 0 0 0 auto;
-    text-align: right;
+    background-color: rgb(240,240,240);
+    padding: 1rem;
+    width: 100%;
+}
+.form-header{
+    padding-top: 1rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.saudacao__bemvindo{
+    color: rgb(55, 120, 173);
+    font-size: 3rem;
+    margin-bottom: 4rem;
 }
 .form__titulo {
-    margin-bottom: 1rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
-.form-group:not(:last-child) {
-    margin-bottom: 1.5rem;
-    width: 80%;
-    float: right;
-}
-.form-group:last-child{
-    clear: both;
+.form-group{
+    margin-bottom: 2rem;
+    position: relative;
 }
 .form-group__input {
-    width: 100%;
-    height: 3rem;
-    border-radius: 4px;
-    outline: none;
-    border: none;
-    /* border-left: 5px solid transparent; */
-    /* float: right; */
-    border-bottom: 5px solid rgb(0, 202, 0);
-    padding: 0 .5rem;
-    padding-top: 4px;
-    font-size: 1.3rem;
-    box-shadow: 1rem .6rem 1rem rgba(0,0,0,.2);
     display: block;
+    width: 90%;
+    margin: 0 auto;
+    height: 3rem;
+    border: none;
+    border-left: 5px solid rgb(0, 202, 0);
+    outline: none;
+    box-shadow: .5rem .5rem .5rem rgba(0,0,0,0.2);
+    padding: 0 1rem ;
+    font-size: 1.3rem;
 }
-.form-group__input:focus-within {
+.form-group__input:focus {
     /* border-left: 5px solid rgb(0, 179, 0); */
-    border-bottom: 5px solid rgb(0, 202, 0);
+    border-left: 5px solid rgb(0, 202, 0);
 }
 .form-group__input:focus:invalid {
     /* border-left: 5px solid red; */
-    border-bottom: 5px solid red;
-}
-
-.form-group__label {
-    display: block;
-    margin-left: 1rem;
-    margin-top: 3px;
-    font-size: 1.3rem;
-    transition: all .2s;
-    clear: both;
-    text-align: left;
-    color: red;
-    font-style: italic;
-    font-weight: 600;
+    border-left: 5px solid red;
 }
 .form-group__input:placeholder-shown {
-    border-bottom: 5px solid transparent;
+    border-left: 5px solid transparent;
+}
+.form-group__label {
+    position: absolute;
+    top: -1.4rem;
+    left: 2rem;
+    transition: all .4s;
+    font-size: 1rem;
 }
 .form-group__input:placeholder-shown + .form-group__label {
     opacity: 0;
     visibility: hidden;
-    transform: translateY(-4rem); 
+    transform: translateY(2rem); 
 }
 .form-group__submit {
-    margin: 0 0 4rem 45%;
     display: block;
-    width: 35%;
-    height: 3rem;
-    font-size: 1rem;
-    background-color: #5db0e2;
-    font-weight: 600;
-    color: white;
-    outline: none;
+    margin: 0 auto;
+    padding: .8rem 2.5rem;
     border: none;
+    outline: none;
+    background-color: #5db0e2;
+    font-size: 1.2rem;
+    color: white;
+    letter-spacing: .1rem;
+    box-shadow: .5rem .5rem .5rem rgba(0,0,0,0.2);
     cursor: pointer;
-    box-shadow: 1rem .6rem 1rem rgba(0,0,0,.2);
+    transition: all .2s;
 }
-.recuperar{
-    font-size: 1rem;
+.form-group__submit:hover {
+    background-image: linear-gradient( 180deg, 
+                                    rgba(23, 136, 186, 1) 50%, 
+                                    rgba(23, 136, 186, 1)92%, 
+                                    rgba(03, 106, 146, 1) 92%);
+    transform: translateY(-.3rem);                                
+}
+.form-group__submit:active {
+    transform: translateY(0rem);
+}
+.recuperar {
+    width: 35%;
+    margin: 0 auto;
     text-align: center;
-    margin-left: 7rem;
+    font-size: 1.2rem;
+    font-weight: 600;
 }
 .recuperar__link,
 .recuperar__link:link,
 .recuperar__link:visited{
-    margin-left: 4px;
-    color: rgb(55, 120, 173);
-    font-size: 1.1rem;
+    display: block;
+    color: rgba(03, 106, 146, 1);
 }
 
-@media (max-width : 1200px) {
+@media (max-width: 1780px) {
+    .caixa-login {
+        width: 80rem;
+    }
+    .box-imagem {
+        width: 60%;
+    }
+    .recuperar {
+        width: 50%;
+    }
+}
+@media (max-width: 1300px){
     .caixa-login {
         width: 50rem;
-        background-size: contain;
-        background-image: linear-gradient(-90deg,
-        rgba(245,245,245, 1) 0%,
-        rgba(245, 245, 245, 1)50%,
-        transparent 50%),
-        url(./1.png);
-        background-size: auto;
-        background-position: left;
     }
-    .form__titulo {
-        text-align: center;
+    .box-imagem {
+        width: 45%;
     }
-    
 }
-
-@media (max-width : 850px) {
+@media (max-width:800px) {
     .caixa-login {
         width: 40rem;
-        background-image: linear-gradient(-105deg,
-        rgba(245,245,245, 1) 0%,
-        rgba(245, 245, 245, 1)50%,
-        transparent 50%),
-        url(./1.png);
-        background-size: auto;
-        background-position: center;
+    }
+    .saudacao__bemvindo {
+        font-size: 2.4rem;
     }
     .form__titulo {
-        text-align: center;
-        padding-left: 2.1rem;
-        margin-bottom: 2rem;
-    }
-    .form-group__input {
         font-size: 1rem;
     }
-    .form-group__label {
-        font-size: 1rem;
-    }
-    .form-group__label:before {
-        content: '*';
-    }
-    .form-group__submit {
-        width: 80%;
-        margin: 0;
-        margin: 0rem 0 2rem 3.5rem;
-        display: block;
-        font-size: 1rem;
+    .form-group:last-child{
+        margin-bottom: 0;
     }
     .recuperar {
-        font-size: 1.4rem;
-        width: 100%;
-        margin: 0;
-        padding-left: 3rem;
-        display: block;
+        font-size: 1rem;
+        /* width: 80%; */
     }
-    .recuperar__link {
+    .recuperar__link{
+        font-size: 1.2rem;
         padding: 1rem;
-        display: block;
-    }
-    .saudacao {
-        width: 60%;
-        margin-right: -1rem;
     }
 }
-
-@media (max-width : 666px) {
-    .box-area__texto {
-        font-size: 1.5rem;
-    }
-    .logo__image {
-        height: 2.8rem;
-    }
+@media (max-width : 650px){
     .caixa-login {
-        width: 90vw;
-        /* height: 55vh; */
-        background-size: cover;
-        background-position: left;
-        background-image: linear-gradient(90deg,
-        rgba(245, 245, 245, 0.8)0%,
-        rgba(245, 245, 245, 0.8)50%,
-        rgba(245, 245, 245, 0.8)50%),
-      url(./1.png);
+        width: 25rem;
     }
-    .saudacao {
-        width: 100%;
-        text-align: center;
+    .box-imagem{
+        display: none;
     }
-    .form {
-        margin: 0 auto;
-        width: 100%;
+    .box-area{
+        top: -3.2rem;
     }
-    .form__titulo {
-        text-align: center;
-        padding: 0;
-        margin-left: 1rem;
-        font-size: .9rem;
+    .box-area__texto{
+        font-size: 1.8rem;
     }
-    .form-group:not(:last-child) {
-        float: none;
+    .box-area__logo{
+        height: 3rem;
     }
-    .form-group {
-        width: 100%!important;
+}
+@media (max-width : 410px) {
+    .caixa-login {
+        width: 20rem;
     }
-    .form-group__submit {
-        margin: 0 auto;
-        margin-bottom: 2rem;
+    .saudacao__bemvindo {
+        font-size: 2rem;
+    }
+    .box-area{
+        top: -2.7rem;
+    }
+    .box-area__texto{
+        font-size: 1.2rem;
+    }
+    .box-area__logo{
+        height: 2.5rem;
     }
     .recuperar {
-        padding: 0;
-    }
-}
-@media (max-width : 500px) {
-    .box-area {
-        margin-top: .6rem;
-    }
-}
-@media (max-width : 400px) {
-    html {
-        font-size: 80%;
-    }
-    .saudacao__bemvindo{
-        font-size: 2rem;
-        text-align: center;
-    }
-    .form__titulo {
-        text-align: center;
-    }
-    .box-area {
-        margin-top: .5rem;
+        font-size: .9rem;
     }
 }

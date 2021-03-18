@@ -8,31 +8,38 @@
     <title>SCI</title>
 </head>
 <body>
-        
-    <div class="caixa-login">
+
+    
+    <div class="caixa-login">    
         <div class="box-area">
             <h1 class="box-area__texto">Área do Cliente</h1>
-            <img src="logo.png" alt="" class="logo__image">
+            <img src="logo.png" alt="" class="box-area__logo">
         </div>
-        <div class="saudacao">
-            <h2 class="saudacao__bemvindo">Seja bem-vindo!</h2>
-        </div>
-        <form action="" class="form">
-            <h3 class="form__titulo">Digite o seu usuário e senha para entrar no sistema:</h3>
-            <div class="form-group">
-                <input type="text" required placeholder="Usuario" id="usuario" class="form-group__input">
-                <label for="usuario" class="form-group__label">Usuário</label>
+        <div class="caixa-login__container">
+            <div class="box-imagem">
+                <img src="full-size.png" alt="" class="box-imagem__img">
             </div>
-            <div class="form-group">
-                <input type="password" required placeholder="Senha" id="senha" class="form-group__input">
-                <label for="senha" class="form-group__label">Senha</label>
-            </div>
-            <div class="form-group">
-                <input type="submit" class="form-group__submit" value="Acessar">
-                <p class="recuperar">Esqueceu sua senha?<a href="#" class="recuperar__link">Clique aqui</a></p>
-            </div>
+            <form action="" class="form">
+                <div class="form-header">
+                    <h2 class="saudacao__bemvindo">Seja bem-vindo!</h2>
+                    <h3 class="form__titulo">Digite o seu usuário e senha para entrar no sistema:</h3>
+                </div>
+                <div class="form-group">
+                    <input type="text" minlength="3" required placeholder="Usuario" id="usuario" class="form-group__input">
+                    <label for="usuario" class="form-group__label">Usuário</label>
+                </div>
+                <div class="form-group">
+                    <input type="password" minlength="3" required placeholder="Senha" id="senha" class="form-group__input">
+                    <label for="senha" class="form-group__label">Senha</label>
+                </div>
+                <div class="form-group">
+                    <input type="submit" class="form-group__submit" value="Entrar">
+                </div>
+                <div class="form-group">
+                    <p class="recuperar">Esqueceu sua senha?<a href="#" class="recuperar__link">Clique aqui</a></p>
+                </div>
+            </div>   
         </form>
     </div>
-    
 </body>
 </html>
