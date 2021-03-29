@@ -115,7 +115,7 @@ body {
     justify-content: space-between;
     position: absolute;
     top: -4.5rem;
-    align-items: center;
+    align-items: baseline;
 }
 .box-area__texto {
     font-style: italic;
