@@ -210,10 +210,13 @@ body {
     cursor: pointer;
     font-size: 1.4rem;
     color: rgba(03, 106, 146, 1);
+    text-decoration: underline;
 }
 /*  */
 
-/*  */
+/*  BOX RECUPERA SENHA*/
+
+
 .content-login__recovery{
     position: absolute;
     top: 45%;
@@ -221,3 +224,25 @@ body {
     transform: translate(65%, -50%);
     width: 85%;
 }
+.form--recovery{
+    padding: 1rem 2.5rem;
+}
+.form-header__titulo--recovery{
+    font-size: 2.2rem;
+    margin-bottom: .2rem;
+}
+.form-header__subtitulo--recovery{
+    font-size: 1.3rem;
+    text-align: justify;
+}
+.form-header__close-recovery{
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    margin-top: .4rem;
+    font-size: 1.2rem;
+    color: black;
+    font-weight: 600;
+    text-decoration: underline;
+}
+/*  BOX RECUPERA SENHA*/
