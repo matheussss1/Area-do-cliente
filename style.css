@@ -10,7 +10,13 @@ html {
 body {
     background-color: #5db0e2;
     font-family: 'EXO 2';
-    overflow: hidden;
+    height: 100vh;
+}
+.site{
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
 /* Animações */
@@ -143,7 +149,6 @@ body {
 .form{
     background-color: whitesmoke;
     padding: 2.5rem;
-    margin-bottom: 1rem;
 }
 .form-header{
     margin-bottom: 2.5rem;

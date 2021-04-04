@@ -8,6 +8,8 @@
     <title>SCI</title>
 </head>
 <body>
+    
+<div class="site">
 
     <div class="content-login" id="caixa-login">
 
@@ -54,7 +56,6 @@
             </div>
 
     </div>
-    
 
     <div class="content-login content-login__recovery" id="caixa-login-recovery">
 
@@ -62,14 +63,14 @@
             <h1 class="header-login__titulo header-login__titulo--recovery">Recuperar senha</h1>
             <img src="logo.png" alt="" class="header-login__logo header-login__logo--recovery">
         </header>
-
+    
             <div class="box-imagem">
                 <img src="full-size.png" alt="" class="box-imagem__img">
             </div>
             <div class="box-form">
                 
             <form action="" class="form form--recovery">
-
+    
                 <header class="form-header form-header--recovery">
                     <h2 class="form-header__titulo form-header__titulo--recovery">Esqueceu sua senha?</h2>
                     <h3 class="form-header__subtitulo form-header__subtitulo--recovery">Informe abaixo seu login de acesso à Área do Cliente, o código do Cliente e o e-mail cadastrado junto à SCI para recuperar sua senha.</h3>
@@ -97,6 +98,7 @@
             </div>
         </footer>
     </div>
+</div>
 
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -104,6 +106,7 @@
 <script>
 
     $('.form-group__recuperar--link').on('click', function(){
+
 
         $('.content-login').removeClass('moveCaixaLoginIn')
         $('.content-login').addClass('moveCaixaLoginOut')
