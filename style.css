@@ -106,12 +106,8 @@ body {
 
 /*  rodapé no mobile*/
 
-.teste {
-    display: flex;
-    justify-content: center;
-    padding: 1rem;
-}
-.content-logian{
+
+.content-login{
     position: absolute;
     top: 45%;
     left: 50%;
@@ -147,7 +143,7 @@ body {
 .form{
     background-color: whitesmoke;
     padding: 2.5rem;
-    margin-bottom: .5rem;
+    margin-bottom: 1rem;
 }
 .form-header{
     margin-bottom: 2.5rem;
