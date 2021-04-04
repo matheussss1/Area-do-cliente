@@ -106,7 +106,11 @@ body {
 
 /*  rodapé no mobile*/
 
-
+.teste {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
 .content-login{
     position: absolute;
     top: 45%;
