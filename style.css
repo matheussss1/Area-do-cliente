@@ -10,6 +10,7 @@ html {
 body {
     background-color: #5db0e2;
     font-family: 'EXO 2';
+    width: 100%;
     height: 100vh;
 }
 .site{
@@ -50,10 +51,10 @@ body {
 }
 @keyframes moveCaixaRecoveryIn {
     from{
-        transform: translate(65%, -50%);
+        right: -50%;
     }
     to{
-        transform: translate(-50%, -50%);
+        right: 50%;        
     }
 }
 
@@ -62,10 +63,10 @@ body {
 }
 @keyframes moveCaixaRecoveryOut {
     to{
-        transform: translate(65%, -50%);
+        right: -50%;
     }
     from{
-        transform: translate(-50%, -50%);
+        right: 50%;        
     }
 }
 .moveLabelUp{
@@ -105,6 +106,8 @@ body {
 
 .rodape{
     width: 100%;
+    margin: 0 auto;
+    max-width: 320px;
 }
 .rodape__img{
     width: 100%;
@@ -120,6 +123,7 @@ body {
     transform: translate(-50%, -50%);
     width: 85%;
     border-radius: 2rem;
+    max-width: 320px !important;
 }
 .header-login{
     display: flex;
@@ -138,9 +142,6 @@ body {
 .header-login__logo{
     width: 50%;
     display: block;
-}
-.box-imagem{
-    display: none;
 }
 .box-form{
     border-radius: .4rem;
@@ -238,9 +239,10 @@ body {
 .content-login__recovery{
     position: absolute;
     top: 45%;
-    left: 50%;
-    transform: translate(65%, -50%);
+    right: -50%;
+    transform: translate(50%, -50%);
     width: 85%;
+    max-width: 320px !important;
 }
 .form--recovery{
     padding: 1rem 2.5rem;
@@ -268,7 +270,7 @@ body {
 
 
 @media (min-width: 360px){
-    .content-login{
-        /* max-width: 80%; */
+    .content-login, .content-login__recovery{
+        
     }
 } 
