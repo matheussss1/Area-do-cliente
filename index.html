@@ -18,11 +18,9 @@
             <img src="logo.png" alt="" class="header-login__logo">
         </header>
 
-            <div class="box-imagem" hidden>
-                <img src="full-size.png" alt="" class="box-imagem__imagem">
-            </div>
-
             <div class="box-form">
+
+                <div class="box-image"></div>
 
                 <form action="" class="form">
     
@@ -47,14 +45,12 @@
                     </div>
     
                 </form>
+
                 <footer>
-                    <div class="rodape">
-                        <img src="./320x43.png"  class="rodape__img" alt="">
-                    </div>
+                    <div class="rodape"></div>
                 </footer>
 
             </div>
-
     </div>
 
     <div class="content-login__recovery" id="caixa-login-recovery">
@@ -64,40 +60,37 @@
             <img src="logo.png" alt="" class="header-login__logo header-login__logo--recovery">
         </header>
     
-            <div class="box-imagem" hidden>
-                <img src="full-size.png" alt="" class="box-imagem__img">
-            </div>
             <div class="box-form">
+            
+                <div class="box-image"></div>
+
+                <form action="" class="form form--recovery">
                 
-            <form action="" class="form form--recovery">
-    
-                <header class="form-header form-header--recovery">
-                    <h2 class="form-header__titulo form-header__titulo--recovery">Esqueceu sua senha?</h2>
-                    <h3 class="form-header__subtitulo form-header__subtitulo--recovery">Informe abaixo seu login de acesso à Área do Cliente, o código do Cliente e o e-mail cadastrado junto à SCI para recuperar sua senha.</h3>
-                </header>
-                <div class="form-group">
-                    <input type="text" minlength="3" required id="log_area_cliente" class="form-group__input">
-                    <label for="log_area_cliente" class="form-group__label">Login área do cliente</label>
-                </div>
-                <div class="form-group">
-                    <input type="text" minlength="3" required id="cod_cliente" class="form-group__input">
-                    <label for="cod_cliente" class="form-group__label">Código do cliente</label>
-                </div>
-                <div class="form-group">
-                    <input type="Email" minlength="3" required id="Email" class="form-group__input">
-                    <label for="Email" class="form-group__label">Email</label>
-                </div>
-                <div class="form-group">
-                    <input type="submit" class="form-group__submit form-group__submit--recovery" value="Enviar">
-                    <span class="form-header__close-recovery" onclick="moveBoxRecoveryOut()">Cancelar</span>
-                </div>
-            </form>
-        <footer>
-            <div class="rodape">
-                <img src="./320x43.png"  class="rodape__img" alt="">
-            </div>
-        </footer>
-    </div>
+                    <header class="form-header form-header--recovery">
+                        <h2 class="form-header__titulo form-header__titulo--recovery">Esqueceu sua senha?</h2>
+                        <h3 class="form-header__subtitulo form-header__subtitulo--recovery">Informe abaixo seu login de acesso à Área do Cliente, o código do Cliente e o e-mail cadastrado junto à SCI para recuperar sua  senha.</h3>
+                    </header>
+                    <div class="form-group">
+                        <input type="text" minlength="3" required id="log_area_cliente" class="form-group__input">
+                        <label for="log_area_cliente" class="form-group__label">Login área do cliente</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" minlength="3" required id="cod_cliente" class="form-group__input">
+                        <label for="cod_cliente" class="form-group__label">Código do cliente</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="Email" minlength="3" required id="Email" class="form-group__input">
+                        <label for="Email" class="form-group__label">Email</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" class="form-group__submit form-group__submit--recovery" value="Enviar">
+                        <span class="form-header__close-recovery" onclick="moveBoxRecoveryOut()">Cancelar</span>
+                    </div>
+                </form>
+                <footer>
+                    <div class="rodape"></div>
+                </footer>
+            </div>   
 </div>
 
 </body>
