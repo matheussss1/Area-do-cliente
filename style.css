@@ -95,7 +95,16 @@ body {
 }
 /* !Animações */
 
+/*  rodapé no mobile*/
 
+.rodape{
+    width: 100%;
+}
+.rodape__img{
+    width: 100%;
+}
+
+/*  rodapé no mobile*/
 
 
 .content-login{
@@ -104,6 +113,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 85%;
+    border-radius: 2rem;
 }
 .header-login{
     display: flex;
@@ -126,11 +136,14 @@ body {
 .box-imagem{
     display: none;
 }
+.box-form{
+    border-radius: .4rem;
+    overflow: hidden;
+}
 .form{
     background-color: whitesmoke;
     padding: 2.5rem;
-    box-shadow: 1rem 1rem .5rem rgba(0,0,0,.5);
-    border-radius: .3rem;
+    margin-bottom: .5rem;
 }
 .form-header{
     margin-bottom: 2.5rem;
@@ -246,3 +259,11 @@ body {
     text-decoration: underline;
 }
 /*  BOX RECUPERA SENHA*/
+
+
+
+@media (min-width: 360px){
+    .content-login{
+        /* max-width: 80%; */
+    }
+} 
